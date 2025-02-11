@@ -1,15 +1,20 @@
-import type { NextConfig } from "next";
-import { hostname } from "os";
+import type { NextConfig } from "next"
+import { hostname } from "os"
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  images: {
-    remotePatterns: [
-      {
-      hostname : '"m.media-amazon.com'
-    }
-  ]
+	/* config options here */
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: '"m.media-amazon.com',
+			},
+			{
+				protocol: "https",
+				hostname: "placehold.co",
+			},
+		],
+	},
 }
-};
 
-export default nextConfig;
+export default nextConfig
