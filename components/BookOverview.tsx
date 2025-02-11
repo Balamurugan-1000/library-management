@@ -48,7 +48,20 @@ const BookOverview = ({
       </div>
       <div className="relative flex flex-1 justify-center">
         <div className="relative">
-          <BookCover />
+          <BookCover
+            varient="wide"
+            className="z-10"
+            coverImage={coverUrl}
+            coverColor={coverColor}
+          />
+          <div className="absolute left-16 top-10 rotate-12 opacity-40 max-sm:hidden">
+            <BookCover
+              varient="wide"
+              className=""
+              coverImage={coverUrl}
+              coverColor={coverColor}
+            />
+          </div>
         </div>
       </div>
     </section>
