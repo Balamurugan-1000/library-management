@@ -31,6 +31,7 @@ const BookCover = ({
 				className,
 			)}
 		>
+    
 			<BookCoverSvg coverColor={coverColor} />
 			<div
 				className="absolute z-10"

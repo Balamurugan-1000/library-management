@@ -7,9 +7,10 @@ const page = () => (
 	<>
 		<BookOverview {...sampleBooks[3]} />
 		<BookList
-			title="Latest Books"
-			books={sampleBooks}
-			containerClassname="mt-28"
+                    title="Latest Books"
+		
+            books={sampleBooks}
+                    containerClassname="mt-28"
 		/>
 	</>
 )
